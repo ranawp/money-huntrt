@@ -11,7 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!--external css file linked -->
     <link rel="stylesheet" href="./style/style.css">
+
 </head>
 
 <body>
@@ -21,7 +23,6 @@
 
     <section class="container pb-4">
         <main>
-
             <div class="row">
                 <div class="col-lg-6">
                     <div width="80%">
@@ -32,30 +33,30 @@
                     <!-- income input -->
                     <div class="mt-5 text-center ">
                         <h5>Income</h5>
-                        <p>Income: <input type="text"></p>
+                        <p>Income: <input id="incomeInput" type="text"></p>
 
                         <!-- expences input  -->
                         <h4>Expenses</h4>
 
-                        <p>Food: <input type="text"></p>
-                        <p>Rent: <input type="text"></p>
-                        <p>Clothes: <input type="text"></p>
+                        <p>Food: <input type="text" id="food-input"></p>
+                        <p>Rent: <input type="text" id="rent-input"></p>
+                        <p>Clothes: <input type="text" id="clothes-input"></p>
 
 
-                        <button type="button" class="btn btn-primary">Calculate</button>
+                        <button type="button" class="btn btn-primary" id="Calculate-button">Calculate</button>
 
-                        <h5 class="my-3">Total Expenses: <span>5500</span>
+                        <h5 class="my-3">Total Expenses: <span id="total-expences">00</span>
                         </h5>
-                        <h5>Balance: <span>4500</span>
+                        <h5>Balance: <span id="total-balance">00</span>
                         </h5>
 
-                        <p><span>Save: <input type="text"></span>
+                        <p><span>Save: <input id="saveInput" type="text"></span>
                             <span>%</span>
 
-                            <button type="button" class="btn btn-primary">Save</button>
+                            <button type="button" class="btn btn-primary" id="saveButton">Save</button>
                         </p>
-                        <h5 class="my-3">Saving Amount: <span>2000 </span> </h5>
-                        <h5>Remaining Balance: <span>2500 </span> </h5>
+                        <h5 class="my-3">Saving Amount: <span id="save-amount">00 </span> </h5>
+                        <h5>Remaining Balance: <span id="remaining-balance">00 </span> </h5>
                     </div>
 
 
