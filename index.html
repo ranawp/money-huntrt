@@ -6,12 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Month Balance</title>
+
+    <!-- bootstrap css cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
+    <header class="container text-center my-5">
+        <h1 class="text-info">Savings Calculation</h1><i class="fa-solid fa-sack-dollar"></i>
+    </header>
 
+    <section class="container pb-4">
+        <main>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div width="80%">
+                        <img width="100%" height="80%" src="./photos/photo1.jpg" alt="calculation-photo">
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-1 bg-light line-height">
+                    <!-- income input -->
+                    <div class="mt-5 text-center ">
+                        <h5>Income</h5>
+                        <p>Income: <input type="text"></p>
+
+                        <!-- expences input  -->
+                        <h4>Expenses</h4>
+
+                        <p>Food: <input type="text"></p>
+                        <p>Rent: <input type="text"></p>
+                        <p>Clothes: <input type="text"></p>
+
+
+                        <button type="button" class="btn btn-primary">Calculate</button>
+
+                        <h5 class="my-3">Total Expenses: <span>5500</span>
+                        </h5>
+                        <h5>Balance: <span>4500</span>
+                        </h5>
+
+                        <p><span>Save: <input type="text"></span>
+                            <span>%</span>
+
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </p>
+                        <h5 class="my-3">Saving Amount: <span>2000 </span> </h5>
+                        <h5>Remaining Balance: <span>2500 </span> </h5>
+                    </div>
+
+
+                </div>
+            </div>
+        </main>
+    </section>
 
 
 
