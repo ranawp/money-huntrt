@@ -1,3 +1,4 @@
+//function call of total balance 
 function claculateButton() {
     let foodInput = document.getElementById('food-input')
     let rentInput = document.getElementById('rent-input')
@@ -20,11 +21,11 @@ function claculateButton() {
         let incomeNumber = incomeInput.value
         let expencesNumber = totalExpences.innerText
 
-        //let balanceNumber = balanceText.value
+
         let incomeTotal = parseInt(incomeNumber) - parseInt(expencesNumber)
-        //console.log(incomeTotal)
+
         balanceText.innerText = incomeTotal
-        // errorInput.classList.add('error-display')
+
 
     } else {
 
@@ -37,28 +38,13 @@ function claculateButton() {
     } else if (totalExpences.innerText < incomeInput.value) {
         errorExpences.classList.add('d-none')
     }
-
-    /* let total = parseInt(foodValue) + parseInt(rentIValue) + parseInt(clothesValue)
-    totalExpences.innerText = total
-
-    //calculate total balance 
-    let incomeInput = document.getElementById('income-Input')
-    let balanceText = document.getElementById('total-balance')
-    let incomeNumber = incomeInput.value
-    let expencesNumber = totalExpences.innerText
-
-    //let balanceNumber = balanceText.value
-    let incomeTotal = parseInt(incomeNumber) - parseInt(expencesNumber)
-    console.log(incomeTotal)
-    balanceText.innerText = incomeTotal */
-
 }
 // calculate total input values
 document.getElementById('Calculate-button').addEventListener('click', function () {
     claculateButton()
 })
 
-//calculate saving amount 
+//function calculate saving amount 
 function calculateSavings() {
     let incomeInput = document.getElementById('income-Input')
     let saveInput = document.getElementById('save-input')
