@@ -7,10 +7,7 @@ function claculateButton() {
     let foodValue = foodInput.value;
     let rentIValue = rentInput.value;
     let clothesValue = clothesInput.value;
-
-
-
-
+    //error massage of negative value 
     let incomeInput = document.getElementById('income-Input');
     const errorInput = document.getElementById('error-input');
     if (incomeInput.value > 0 && foodValue > 0 && rentIValue > 0 && clothesValue > 0) {
