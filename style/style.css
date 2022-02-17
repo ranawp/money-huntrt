@@ -1,12 +1,10 @@
-.img-width{
-    width: 80%;
-}
-/* input.input-background {
-    background-color: ;
-} */
+
+/* input background color */
 input[type="text"] {
     background-color: #DCDCDC;
 }
+
+/* line height of form area */
  .line-height{
     line-height: 200%;
 

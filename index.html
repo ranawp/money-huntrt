@@ -17,44 +17,59 @@
 </head>
 
 <body>
+    <!-- header section -->
     <header class="container text-center my-5">
         <h1 class="text-info">Savings Calculation</h1><i class="fa-solid fa-sack-dollar"></i>
     </header>
+
 
     <section class="container pb-4">
         <main>
             <div class="row">
                 <div class="col-lg-6">
+                    <!-- left side  -->
                     <div width="80%">
                         <img width="100%" height="80%" src="./photos/photo1.jpg" alt="calculation-photo">
                     </div>
                 </div>
                 <div class="col-lg-5 offset-1 bg-light line-height">
-                    <!-- income input -->
-                    <div class="mt-5 text-center ">
+                    <!-- right side -->
+                    <!-- income input area -->
+                    <div class="mt-5 text-center">
                         <h5>Income</h5>
-                        <p>Income: <input id="incomeInput" type="text"></p>
+                        <p>Income: <input id="income-Input" type="text" class="ms-2"></p>
 
-                        <!-- expences input  -->
+                        <!-- expences input area -->
                         <h4>Expenses</h4>
 
-                        <p>Food: <input type="text" id="food-input"></p>
-                        <p>Rent: <input type="text" id="rent-input"></p>
-                        <p>Clothes: <input type="text" id="clothes-input"></p>
+                        <p>Food: <input type="text" id="food-input" class="ms-3"></p>
+                        <p>Rent: <input type="text" id="rent-input" class="ms-4"></p>
+                        <p>Clothes: <input type="text" id="clothes-input" class="ms-1"></p>
 
 
                         <button type="button" class="btn btn-primary" id="Calculate-button">Calculate</button>
 
+                        <p class="text-danger d-none" id="error-input">please input valid Number</p>
+
+                        <!-- total expences -->
                         <h5 class="my-3">Total Expenses: <span id="total-expences">00</span>
                         </h5>
+                        <small class="text-danger d-none" id="error-expense">Your expense amount more than your
+                            income</small>
+
+                        <!-- balance area  -->
                         <h5>Balance: <span id="total-balance">00</span>
                         </h5>
 
-                        <p><span>Save: <input id="saveInput" type="text"></span>
+                        <!-- savings input section -->
+                        <p><span>Save: <input id="save-input" type="text"></span>
                             <span>%</span>
 
                             <button type="button" class="btn btn-primary" id="saveButton">Save</button>
                         </p>
+                        <!-- savings error massage -->
+                        <small class="text-danger d-none" id="savings-error">your savings amount greater than your total
+                            balance.Please save lower than your balance</small>
                         <h5 class="my-3">Saving Amount: <span id="save-amount">00 </span> </h5>
                         <h5>Remaining Balance: <span id="remaining-balance">00 </span> </h5>
                     </div>
@@ -68,10 +83,12 @@
 
 
 
-
+    <!-- bootstrap cdn js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
+
+    <!-- external js link -->
     <script src="./style.js"></script>
 </body>
 
