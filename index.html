@@ -25,26 +25,28 @@
 
     <section class="container pb-4">
         <main>
-            <div class="row">
+            <div class="row gy-3">
                 <div class="col-lg-6">
                     <!-- left side  -->
                     <div width="80%">
                         <img width="100%" height="80%" src="./photos/photo1.jpg" alt="calculation-photo">
                     </div>
                 </div>
-                <div class="col-lg-5 offset-1 bg-light line-height">
+                <div class="col-lg-5 bg-light line-height">
                     <!-- right side -->
                     <!-- income input area -->
-                    <div class="mt-5 text-center">
+                    <div class="mt-5  text-center">
                         <h5>Income</h5>
-                        <p>Income: <input id="income-Input" type="text" class="ms-2"></p>
+                        <p>Income: <input placeholder="Input your total income" id="income-Input" type="text"
+                                class="ms-2"></p>
 
                         <!-- expences input area -->
                         <h4>Expenses</h4>
 
-                        <p>Food: <input type="text" id="food-input" class="ms-3"></p>
-                        <p>Rent: <input type="text" id="rent-input" class="ms-4"></p>
-                        <p>Clothes: <input type="text" id="clothes-input" class="ms-1"></p>
+                        <p>Food: <input placeholder="Input your food cost" type="text" id="food-input" class="ms-3"></p>
+                        <p>Rent: <input placeholder="Input your rent cost" type="text" id="rent-input" class="ms-4"></p>
+                        <p>Clothes: <input placeholder="Input your clothes" type="text" id="clothes-input" class="ms-1">
+                        </p>
 
 
                         <button type="button" class="btn btn-primary" id="Calculate-button">Calculate</button>
@@ -62,7 +64,7 @@
                         </h5>
 
                         <!-- savings input section -->
-                        <p><span>Save: <input id="save-input" type="text"></span>
+                        <p><span>Save: <input placeholder="Input your savings rate" id="save-input" type="text"></span>
                             <span>%</span>
 
                             <button type="button" class="btn btn-primary" id="saveButton">Save</button>
